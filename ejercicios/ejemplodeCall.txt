@@ -1,0 +1,55 @@
+//variables con objetos
+let person1 = {nombre:'Borja', apellidos:'Castaño'};
+let person2 = {nombre:'Pepe', apellidos:'Castaño'};
+
+//funcion
+function hola(greeting){
+    console.log(greeting + '' + this.nombre + '' + this.apellidos);
+}
+
+//muesto por pantalla la funcion tal cual
+console.log(hola);
+
+hola(greeting){
+    console.log(greeting + '' + this.nombre + '' + this.apellidos);
+}
+
+//asi no podemos llamar a la funcion ya que no le estamos mandando los objetos
+hola();
+undefinedundefinedundefined
+undefined
+
+//asi si debemos llamar a la funcion pasandole, un objeto
+hola.call(person1, 'Helo');
+HeloBorjaCastaño
+
+
+
+function multiplica(num = 2) {
+  console.log(this.valor * num);
+}
+undefined
+
+var obj = {
+  valor: 10
+};
+ 
+
+undefined
+multiplica.call(obj,2);
+VM465:2 20
+undefined
+var obj2 = { valor:8 };
+undefined
+multiplica.call(obj,4);
+VM465:2 40
+
+
+var obj = { valor: 10};
+
+var multiplicar5 = multiplica.bind(obj, 5);
+
+//sacar por pantalla
+multiplicar5(); ---> 50
+
+

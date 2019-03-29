@@ -1,0 +1,44 @@
+function findLargestNum(arr) {
+  var numero = 0;
+  
+  for (var i=0; i < arr.length; i++){
+    if (arr[i] > numero){
+        numero = array [i];
+        }
+  }
+  return numero;
+}
+
+
+console.log(findLargestNum([4, 5, 1, 3]));
+console.log(findLargestNum([300, 200, 600, 150]));
+console.log(findLargestNum([1000, 1001, 857, 1]));
+
+
+
+function findLargestNum(arr) {
+    let numero = array[0]:
+    
+    for (let i=1: i < array.length; i ++){
+      if(array[i]>numero){
+        numero = array[i];
+      }
+      
+    }
+  return numero;
+}
+
+
+console.log(findLargestNum([4, 5, 1, 3]));
+console.log(findLargestNum([300, 200, 600, 150]));
+console.log(findLargestNum([1000, 1001, 857, 1]));
+
+function findLargestNum(arr) {
+	//mediante la funcione max obtengo el valor maximo, ... cojo todos los valores
+  return Math.max(...arr);
+}
+
+
+console.log(findLargestNum([4, 5, 1, 3]));
+console.log(findLargestNum([300, 200, 600, 150]));
+console.log(findLargestNum([1000, 1001, 857, 1]));

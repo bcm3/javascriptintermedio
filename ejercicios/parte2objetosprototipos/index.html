@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src=""></script>
+</head>
+
+<!-- <body onload="functionA()"> -->
+
+<body>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script>
+        $.ajax({
+            url: "https://dog.ceo/api/breeds/list/all",
+            success: function (result) {
+
+                var dogs = result.message
+                // console.log(dogs)
+
+                for (dog in dogs) { 
+
+                    // console.log(Raza(dog, dogs[dog]))   
+                    getPhoto(dog)
+                 }
+
+                 function Raza(nombre, tipo) {
+                     var perro = {
+                         nombre: nombre,
+                         tipo: tipo
+                     }
+
+                     return perro;
+                 }
+              
+                 function getPhoto(nombre) {
+
+                    $.ajax({
+                        url: "https://dog.ceo/api/breed/" + nombre + "/images/random",
+                        success: function (photo) {
+
+                            console.log(nombre, photo)
+
+                        }
+                    });
+
+                 }
+
+            }
+        });
+
+
+        // function functionA() {
+        //   var req = new XMLHttpRequest();
+        //   req.open(
+        //     "GET",
+        //     "https://dog.ceo/api/breeds/list/all",
+        //     true
+        //   );
+        //   req.onreadystatechange = function (aEvt) {
+        //     if (req.readyState == 4) {
+        //       if (req.status == 200)
+        //         console.log(req.responseText);
+        //       else dump("Error loading page \n");
+        //     }
+        //   };
+        //   req.send(null);
+        // }
+
+        //     //propiedades
+        //     Raza.prototype.nombre = null;
+        //     Raza.prototype.variedad = null;
+
+        //     //vacio
+        //     function Raza(){
+        //     }
+
+        //     //getters y setters
+        //     Raza.prototype.setNombre = function( nombre ) {
+        //       this.nombre = nombre;
+        //     }
+
+        //     Raza.prototype.getNombre = function() {
+        //         return this.nombre;
+        //     }
+
+        //     Raza.prototype.setVariedad = function( variedad ) {
+        //       this.variedad = variedad;
+        //     }
+
+        //     Raza.prototype.getVariedad = function() {
+        //         return this.variedad;
+        //     }
+
+        //     function mostrar(nombre, variedad) {
+        //         this.nombre =  nombre,
+        //         this.variedad = variedad,
+        //         this.completo = function (){
+        //             return this.nombre + this.variedad;
+        //         }
+
+        //         let raza = new mostrar("tobby", "pastor alemán");
+
+        //         console.log(mostrar.prototype)
+        // }
+    </script>
+</body>
+
+</html>

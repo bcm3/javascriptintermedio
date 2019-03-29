@@ -1,0 +1,8 @@
+            // function temperaturas(id) {
+            //     if (result.length > 0) {
+            //         let humedad = result.shift().humidity
+            //         temperaturame.push(humedad)
+            //         media = humedad/result.length
+            //         temperaturas();
+            //     }
+            // }

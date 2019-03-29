@@ -1,0 +1,23 @@
+let b=document.getElementById('pagina');
+//creamos un var para coher los elementos de pagina
+
+b;
+<h2 id=?"pagina">? h2 ?</h2>?
+
+//asignamos al textContent ese texto donde estaba el texto anterior
+b.textContent = ' Tengo hmbre';
+" Tengo hmbre"
+
+let cambiar=document.querySelector('.todos');
+undefined
+cambiar;
+<li class=?"todos">?Item 1?</li>?
+cambiar.textContent="Wake Up"
+"Wake Up"
+
+
+let todos=document.querySelector('ul');
+undefined
+todos;
+<ul>?<li class=?"todos">?Item 1?</li>?<li class=?"todos">?Item 2?</li>?<li class=?"todos">?Item 3?</li>?</ul>?
+todos.removeChild(todos.firstChild);

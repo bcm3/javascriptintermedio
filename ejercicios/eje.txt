@@ -1,0 +1,18 @@
+UTILZIAR : WEB SEMANTICA CSS3
+
+
+set hook -> bbindear  
+
+
+
+//EJEMPLO DE FUNCIONES RECURSIVIDAD
+function dameNombre(nombre){
+
+var nombre= prompt("Dame nombre")
+	if (nombre == 'Borja'){
+    		alert("Acertaste")}
+		else 
+		{alert("Fallo")}
+
+	dameNombre();
+}
