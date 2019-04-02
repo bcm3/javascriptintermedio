@@ -1,0 +1,38 @@
+¿Qué diferencia hay entre == y ===?
+- == -> Comprueba que sean del mismo valor: pepe, pepe o 1,1
+- === -> Comprueban que sean del mismo tipo: Strings, number...
+
+¿Qué es el “strict mode”?
+- El strict mode se utiliza para que todo nuestro codigo lleve la forma correcta de codificacion.
+
+¿Qué son exactamente las clases en JavaScript?
+-  Son una mejora sintactica sobre la herencia de objetos.
+
+¿Cambian el modelo de orientación a objetos que ya existía antes de ES2015?
+
+¿Qué diferencia hay entre una declaración de función y una de clase?
+- las funciones pueden llevar parametros la clase no.
+
+¿En qué modo se ejecuta el contenido de una clase?
+- 
+
+¿Qué tipos de ámbito (scope) tiene JavaScript? ¿Cómo se crea uno nuevo?
+- Scope variable local, function hola(){ let nombre; .... }
+
+¿Qué es y cómo funciona el hoisting?
+- Es cuando el interprete interno de JS pasa a ubicar las variables al inicio.
+
+¿Qué es una “temporal dead zone”?
+- Cuando mostramos por consola una variable vacia, y la inicializamos despues.
+
+¿Qué diferencia hay entre var y let?
+var declara una variable de scope global o local para la función sin importar el ámbito de bloque. Permite hoisting.
+let declara una variable de scope global, local para la función o de bloque. Es reasignable y NO permite hoisting.
+
+¿Cuándo deberías usar const?
+- Declaracion de constantes, siempre que queramos que ese valor sea el mismo SIEMPRE que no se modique el valor.
+
+Explica cómo funciona la delegación de eventos.
+- Cuando tenemos varios elementos y tratamos directamente con el padre. event listener al padre.
+
+Describe con detalle las 3 fases por las que pasa un evento en el navegador.

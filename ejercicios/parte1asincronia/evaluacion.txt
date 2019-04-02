@@ -1,0 +1,39 @@
+¿Qué diferencia hay entre una función síncrona y una asíncrona?
+- Sincrono el codigo se ejecuta linea a linea, y esperamos al resultado
+- Asincrono -> realizamos la invocacion al (metodo, recurso), pero el codigo se sigue ejecutando
+¿Qué es y para qué sirve un callback?
+- Es para hacer llamadas a metodos a funciones externas
+¿Qué problemas surgen al usar callbacks en un bucle?
+- Puedes producir un bluce infinito
+¿Qué es el “callback hell” y cómo podemos mitigarlo?
+- Cuando escribimos Javascript estructurado, podemos evitarlo haciendolo mas simple.
+¿Qué son las promesas y qué aportan a la programación de código asíncrono?
+- Sirven para no bloquear el hilo principal de programa, aporta que el codigo siga ejecutandose hasta que nos devuelva lo que esperamos (ej: una funcion).
+
+¿Cómo manejamos errores en las promesas?
+- Con el then o el try y catch.
+
+¿Cuándo es una mala opción usar promesas?
+- 
+
+¿Qué ventajas nos aporta usar async/await? 
+- Asyns ->  Antes de definier la funcion
+- Await -> Para pausar la funcion de manera que no se detenga la promesa
+¿Sirve para cualquier caso de programación asíncrona? - Sí
+
+¿Qué es y para qué sirve CORS?
+
+- Es el control de acceso HTTP en las cabezeras. 
+
+¿Qué es una “Preflighted request”?
+
+- Sirve para comprobar si el protocolo CORS es comprendido.
+
+¿Qué requisitos necesita una API para ser consumida desde cualquier dominio en un navegador web?
+
+
+
+Describe cómo funciona y para qué sirve JSONP.
+
+- Sirve para el intercambio de informacion cliente/servidor. Se comunica de manera asicrona.
+

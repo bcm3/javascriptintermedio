@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botones</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <input type="button" name="boton" value="Boton 1" id="1">
+    <input type="button" name="boton" value="Boton 2" id="2">
+    <input type="button" name="boton" value="Boton 3" id="3">
+    <input type="button" name="boton" value="Boton 4" id="4">
+    <input type="button" name="boton" value="Boton 5" id="5">
+    <input type="button" name="boton" value="Boton 6" id="6">
+    <input type="button" name="boton" value="Boton 7" id="7">
+    <input type="button" name="boton" value="Boton 8" id="8">
+    <input type="button" name="boton" value="Boton 9" id="9">
+    <input type="button" name="boton" value="Boton 10" id="10" onclick="URL()">
+    <script>
+        $(function () {
+            $(document).on('click', 'input[type="button"]', function (event) {
+                let id = this.id;
+                console.log("Se presionó el Boton con Id :" + id)
+            });
+
+        });
+
+        $('#10').click(function () {
+            document.location = 'http://www.google.com/';
+        });
+    </script>
+
+</html>
